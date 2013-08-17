@@ -24,7 +24,7 @@ function irPerfil()
     if(empty($_SESSION['usuario_nombre'])) { // comprobamos que las variables de sesión estén vacías         
 ?> 
         <form id="login" action="comprobar.php" method="post"> 
-            <label>Ola q ase</label><br /> 
+            <label>Ola q ase1</label><br /> 
             <label>Usuario:</label><br /> 
             <input type="text" name="usuario_nombre" /><br /> 
             <label>Contraseña:</label><br /> 
