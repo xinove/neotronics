@@ -1,5 +1,6 @@
 <?php  
-	include('../acceso_db.php'); 
+	include_once($_SERVER['DOCUMENT_ROOT']."/constantes");
+    include_once($root.'/acceso_db.php');
 
 	ob_start("ob_gzhandler"); 
 	//Las funciones ob_start y ob_end_flush te permiten escojer en qué momento 

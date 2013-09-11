@@ -1,5 +1,6 @@
 <?php 
-    include('acceso_db.php'); // incluímos los datos de acceso a la BD 
+    include_once($_SERVER['DOCUMENT_ROOT']."/constantes.php");
+    include_once($root.'/acceso_db.php');
     if(isset($_POST['enviar'])) { // comprobamos que se han enviado los datos del formulario 
         if(empty($_POST['usuario_nombre'])) { 
            echo "No ha ingresado el usuario. <a href='javascript:history.back();'>Reintentar</a>"; 

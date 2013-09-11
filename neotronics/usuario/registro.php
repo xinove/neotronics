@@ -11,9 +11,10 @@ var cal_1 = new Calendar({
 });
 </script>
 <?php 
-	require_once('classes/tc_date.php');
-	require_once('classes/tc_calendar.php');
-    include('acceso_db.php'); // incluimos el archivo de conexión a la Base de Datos 
+    include_once($_SERVER['DOCUMENT_ROOT']."/constantes.php");
+    include_once($root.'/acceso_db.php');
+	require_once($clase.'/tc_date.php');
+	require_once($clase.'/tc_calendar.php');
     if(isset($_POST['enviar'])) { // comprobamos que se han enviado los datos desde el formulario 
         // creamos una función que nos parmita validar el email 
         function valida_email($correo) { 

@@ -1,6 +1,7 @@
 <?php 
     session_start(); 
-    include('acceso_db.php'); 
+    include_once($_SERVER['DOCUMENT_ROOT']."/constantes.php");
+    include_once($root.'/acceso_db.php');
     $perfil = mysql_query("SELECT id_usuario, usuario, fecha_alta FROM usuarios WHERE usuario='".$_SESSION['usuario_nombre']."'"); 
     if(mysql_num_rows($perfil)) { // Comprobamos que exista el registro con la ID ingresada 
         $row = mysql_fetch_array($perfil); 

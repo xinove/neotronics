@@ -1,5 +1,6 @@
 <?php
-	include('../acceso_db.php'); 
+    include_once($_SERVER['DOCUMENT_ROOT']."/constantes.php");
+    include_once($root.'/acceso_db.php');
 	session_start();
 	
 	//con session_start() creamos la sesión si no existe o la retomamos si ya ha sido creada

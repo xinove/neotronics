@@ -1,6 +1,8 @@
 <?php 
     session_start(); 
-    include('acceso_db.php'); 
+    include_once($_SERVER['DOCUMENT_ROOT']."/constantes.php");
+        include_once($root.'/acceso_db.php');
+     
 	if(isset($_POST['usuario_nombre']) || isset($_POST['usuario_clave'])){ // comprobamos que se hayan enviado los datos del formulario 
         // comprobamos que los campos usuarios_nombre y usuario_clave no estén vacíos 
         if(empty($_POST['usuario_nombre']) || empty($_POST['usuario_clave'])) { 
@@ -20,7 +22,7 @@
             }else { 
             	error_log("Oracle database not available! usuario: ".$usuario_nombre." contraseña:".$usuario_clave, 0);
 ?> 
-                Error1, <a href="acceso.php">Reintentar </a> 
+                Error1, <a href="./acceso.php">Reintentar </a> 
 <?php 
             } 
         } 
