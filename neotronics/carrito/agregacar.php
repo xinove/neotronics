@@ -1,5 +1,5 @@
 <?php
-    include_once($_SERVER['DOCUMENT_ROOT']."/constantes.php");
+    include_once($_SERVER['HTTP_HOST']."/constantes.php");
     include_once($root.'/acceso_db.php');
 	session_start();
 	
