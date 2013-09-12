@@ -13,7 +13,7 @@ function ingresar()
 }
 function irPerfil()
 {
-	document.getElementById("conectado").action = 'perfil.php';
+	document.getElementById("conectado").action = 'usuario/perfil.php';
 	document.getElementById("conectado").submit();
 }
 </script>
