@@ -1,11 +1,9 @@
 <?php
-session_start();
-//con session_start() creamos la sesión
-//si no existe o la retomamos si ya ha
-//sido creada
-extract($_REQUEST);
-//la función extract toma las claves
-//de una matriz asoiativa y las
+	session_start();
+	//con session_start() creamos la sesión si no existe o la retomamos si ya ha sido creada
+	
+	extract($_REQUEST);
+	//la función extract toma las claves de una matriz asoiativa y las
 //convierte en nombres de variable,
 //asignándoles a esas variables
 //valores iguales a los que tenía
